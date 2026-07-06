@@ -1,0 +1,138 @@
+#include <iostream>
+#include <fstream>
+#include <vector>
+#include <string>
+
+using namespace std;
+
+struct Graf {
+    int rozmiar;
+    vector<vector<int>> macierz;
+};
+
+Graf wczytajGrafFullMatrix(string nazwa_pliku) {
+    Graf graf;
+    graf.rozmiar = 0;
+    ifstream plik(nazwa_pliku);
+
+    if (!plik.is_open()) return graf;
+
+    string slowo;
+    while (plik >> slowo) {
+        if (slowo == "DIMENSION:" || slowo == "DIMENSION") {
+            string wartosc;
+            plik >> wartosc;
+            if (wartosc == ":") plik >> wartosc;
+            graf.rozmiar = stoi(wartosc);
+            graf.macierz.assign(graf.rozmiar, vector<int>(graf.rozmiar, 0));
+        } else if (slowo == "EDGE_WEIGHT_SECTION") {
+            break;
+        }
+    }
+
+    if (graf.rozmiar == 0) return graf;
+
+    for (int i = 0; i < graf.rozmiar; i++) {
+        for (int j = 0; j < graf.rozmiar; j++) {
+            plik >> graf.macierz[i][j];
+            if (i == j || graf.macierz[i][j] >= 9999) {
+                graf.macierz[i][j] = -1;
+            }
+        }
+    }
+
+    plik.close();
+    return graf;
+}
+
+void konwertujFullMatrix(string wejscie, string wyjscie, int optimum) {
+    Graf graf = wczytajGrafFullMatrix(wejscie);
+    if (graf.rozmiar == 0) return;
+
+    ofstream plik(wyjscie);
+    plik << graf.rozmiar << "\n";
+    for (int i = 0; i < graf.rozmiar; i++) {
+        for (int j = 0; j < graf.rozmiar; j++) {
+            plik << graf.macierz[i][j] << " ";
+        }
+        plik << "\n";
+    }
+    plik << "\nsum_min=" << optimum << "\n";
+    plik.close();
+}
+
+void konwertujUpperRow(string wejscie, string wyjscie, int rozmiar, int optimum) {
+    ifstream plik(wejscie);
+    if (!plik.is_open()) return;
+
+    vector<vector<int>> macierz(rozmiar, vector<int>(rozmiar, -1));
+    string slowo;
+    while (plik >> slowo) {
+        if (slowo == "EDGE_WEIGHT_SECTION") break;
+    }
+
+    for (int i = 0; i < rozmiar; i++) {
+        for (int j = i + 1; j < rozmiar; j++) {
+            int waga;
+            if (plik >> waga) {
+                macierz[i][j] = waga;
+                macierz[j][i] = waga;
+            }
+        }
+    }
+    plik.close();
+
+    ofstream wyjscie_plik(wyjscie);
+    wyjscie_plik << rozmiar << "\n";
+    for (int i = 0; i < rozmiar; i++) {
+        for (int j = 0; j < rozmiar; j++) {
+            wyjscie_plik << macierz[i][j] << " ";
+        }
+        wyjscie_plik << "\n";
+    }
+    wyjscie_plik << "\nsum_min=" << optimum << "\n";
+    wyjscie_plik.close();
+}
+
+void konwertujLowerDiagRow(string wejscie, string wyjscie, int rozmiar, int optimum) {
+    ifstream plik(wejscie);
+    if (!plik.is_open()) return;
+
+    vector<vector<int>> macierz(rozmiar, vector<int>(rozmiar, -1));
+    string slowo;
+    while (plik >> slowo) {
+        if (slowo == "EDGE_WEIGHT_SECTION") break;
+    }
+
+    for (int i = 0; i < rozmiar; i++) {
+        for (int j = 0; j <= i; j++) {
+            int waga;
+            if (plik >> waga) {
+                if (i != j) {
+                    macierz[i][j] = waga;
+                    macierz[j][i] = waga;
+                }
+            } else {
+                plik.clear();
+                plik >> slowo;
+            }
+        }
+    }
+    plik.close();
+
+    ofstream wyjscie_plik(wyjscie);
+    wyjscie_plik << rozmiar << "\n";
+    for (int i = 0; i < rozmiar; i++) {
+        for (int j = 0; j < rozmiar; j++) {
+            wyjscie_plik << macierz[i][j] << " ";
+        }
+        wyjscie_plik << "\n";
+    }
+    wyjscie_plik << "\nsum_min=" << optimum << "\n";
+    wyjscie_plik.close();
+}
+
+int main() {
+    konwertujLowerDiagRow("dantzig42.tsp.txt", "dantzig42.tsp_prosty.txt", 42, 699);
+    return 0;
+}

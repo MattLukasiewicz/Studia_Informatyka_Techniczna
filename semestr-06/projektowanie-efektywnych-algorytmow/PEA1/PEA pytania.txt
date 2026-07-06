@@ -1,0 +1,149 @@
+
+
+
+5. Przegląd zupełny
+czy w algorytmie już mamy dać warunek który skróci czas dla symetrycznych czy on ma być osobny algorytm uzyty tylko do symetrycznych macierzy tzn czy wiemy że jest symetryczny i od razu sprawdzamy tym symetrycznym jest tam jeden warunek czy to ma być jeden algorytm i on sprawdza za każdym razem na początku czy symertryczna macierz czy nie ?
+warunek: odrzucamy (pomijamy) wszystkie permutacje, w których drugie miasto ma wyższy indeks niż ostatnie miasto
+
+
+Wygenerowane macierze z własnego generatora zapisane i na nich robimy już czy za każdym razem jak odpalimy program to ma być generowane na nowo macierze z tego zakresu?
+Czy mamy powtarzać kilka razy bf i wziąć z niego średnią? zawsze jakieś sekundy różnicy będą
+
+wygenerować np 5 macierzy 6x6 I z tego czas wziąć i uśrednić
+
+PZ jeden z usprawnieneim I drugi bez bo tak to będą takie same wyniki
+
+Rozsądny wynik czyli np 14 na wykresie a o 15 na;isać że za długo liczy
+
+
+
+
+Czy dla Algorytmu NN i losowego trzeba sprawdzać siedem instancji dla symetrycznej i 7 dla niesymetrycznej?
+Ile instancji dla macierzy czy 3 atsp i 4 tsp wystarczą?
+7 dla tych i 7 dla tych
+
+
+Czy pliki mają być z tego zipa? czy sami możebmy zrobić?
+Pokazać jakie wybrałem macierze ui czy sa okey?
+Czy mogę zmodyfikować te pliki macierzy gotowych i dać tam optimum znalezione w pliku DOC?
+W pliku doc jest optimum w tabeli?
+
+
+Npisać jak odpalać jaki program jaką symulację? Co jest do czego w pliku konfigurayjnym?
+
+
+
+
+
+Pokazać moje macierze testowe czy one są dobre
+
+
+
+
+
+1.określić maksymalny rozmiar instancji, dla której można znaleźć rozwiązanie w tzw. rozsądnym
+czasie: 30 min
+odpalić program i zobaczyć kiedy przekroczy czas 30 minut
+2.wyznaczyć zależność czasu uzyskania rozwiązania od rozmiaru instancji
+
+X daje N, na osi Y daje czas.
+
+
+
+
+
+
+Ile razy pszczać algorytm żeby przeszedł i średnią z tego zrobić?
+
+Algorytm NN Algorytm RNN
+
+2.Określić maksymalny rozmiar instancji, dla której
+można znaleźć rozwiązanie w tzw. rozsądnym czasie: 15 min. Jeśli taka instancja nie jest dostępna,
+to należy oszacować jej rozmiar w oparciu o oszacowanie złożoności czasowej na podstawie przebiegu
+algorytmu i wy
+
+Robię pomiar proporcjami że jeśli 50 miast będzie zrobionych w sekundę to 50 razy 900 sekund i mam to oszaczowane?
+
+wziąć macierz 17 tysięsy i sprawdzić czy działą raz można tylko
+
+
+
+3.Wyznaczyć zależność czasu uzyskania rozwiązania
+do rozmiaru instancji
+Rozwiązanie to przejście algoryutmu rozumeim i wykres Czas do N rozmiar
+
+4.Uzasadnić powód ograniczenia limitu czasu w oparciu o oszacowanie złożoności czasowej dla algorytmu
+losowego, NN i RNN.
+Chodzi o to że losowy daje większy błąd w większy czas a te w ułamkusekundy mniejszy błąd
+
+
+
+
+
+
+ASlgorytm rand
+1. 7 instancji Jaki podział?
+7 tych i tych
+
+
+NIe da się tych samych rozmarów macierzy dla nn i randa nie ma to sensu więc inne macierze
+
+
+
+2. Określić ilość ścieżek dla każdej badanej instancji,
+która pozwoli uzyskać rozsądny wynik tj. np. 10%
+błąd w porównaniu do znanego rozwiązania (długości ścieżki).
+
+Czy po odpaleniu programu mamy robić po miar kilka razy dla tej samej liczby iteracji i wyciągnąć średnią?
+Ustalam ilość losowań na jakieś i patrze czy ten błąd będzie bliski 10%? 
+
+Pamiętać o ziarnie
+Dla danej liczby iteracji np 1000000 puszczam go 5 razy i biore srenia pamietac o ziarnie 
+
+A ile razy mam powtarzać badania i robić średnią?
+Skoro pisze określić to mogę oszacować? na podstaweei danych  bo te czasy będą tak długie że nie da rady zrobić to 33 silnia  to program nie da rady zrobić mi dla tych instancji większych i mam to po prostu wyliczyć oszacować na podstawei dostęnych pomiarów i błędów?
+Dla zobrazowania wykres Oś pozioma (X): Liczba iteracji ($10^3, 10^4, 10^5, 10^6, 10^7, 10^8$)Oś pionowa (Y): Błąd [%]
+
+>>> BADANIE RAND DLA PLIKU: dane/ATSP/ftv33_prosty.txt <<<
+Optimum: 1286
+Iteracje    Najlepszy Koszt   Blad [%]    Sredni Czas [ms]
+100000000   2695              109.56      268274.082    
+
+100 milionów ścieżek prawie 5 minut 109%błędu 
+
+
+3. Wyznaczyć zależność czasu uzyskania rozwiązania
+od rozmiaru instancji.
+
+Oś X to rozmiar N, Oś Y to czas w którym mamy próg ok 10 %?
+
+tak 10 % mogę zwziac macierze z przeglądu zupełnego np do 14 na nich rtobić a dla nn i rnn z pliku
+
+
+
+
+
+
+
+
+
+4.Określić maksymalny rozmiar instancji, dla której
+można znaleźć rozwiązanie w tzw. rozsądnym czasie: 15 min. Należy oszacować złożoność czasową na
+podstawie przebiegu algorytmu
+
+biorę jedną macierz i obliczam ile trwa jedna iteracja a potem dzieleę przez czas 15 minut i mam ile op[eracji mogę zrobić
+
+Obliczony czas sprawdzenia 1 sciezki (122 316 / 100 000 000) = 0.00122 ms
+15 minut to 900 sekund, czyli 900 000 milisekund (ms).
+ (900 000 / 0.00122)
+737 milionow permutacji w 15 min
+N = 13: 12! = 479 milionow
+N = 14: 13! = 6.2 miliarda nie zmieści się czyli nu 13
+
+
+biore macierz jakas sprawdzam czy w 15 minut znajdzie rozwiązanie i dla jakiej liczby sciezki
+
+5.Wyznaczyć złożoność obliczeniową algorytmu losowego w oparciu o wyniki.
+
+Stała instancja a ilość ścieżek to potęgi 10 będzie liniowy wykres 
+Zależność czasu od rozmiaru instancji
