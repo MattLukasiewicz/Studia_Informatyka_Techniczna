@@ -1,0 +1,3 @@
+C:/Semestr_1/Lab_4_1b/cmake-build-debug/CMakeFiles/Lab_4_1b.dir
+C:/Semestr_1/Lab_4_1b/cmake-build-debug/CMakeFiles/edit_cache.dir
+C:/Semestr_1/Lab_4_1b/cmake-build-debug/CMakeFiles/rebuild_cache.dir

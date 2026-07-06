@@ -1,0 +1,3 @@
+C:/Users/mateu/OneDrive - Politechnika Wroclawska/laby5/cmake-build-debug/CMakeFiles/laby5.dir
+C:/Users/mateu/OneDrive - Politechnika Wroclawska/laby5/cmake-build-debug/CMakeFiles/edit_cache.dir
+C:/Users/mateu/OneDrive - Politechnika Wroclawska/laby5/cmake-build-debug/CMakeFiles/rebuild_cache.dir
