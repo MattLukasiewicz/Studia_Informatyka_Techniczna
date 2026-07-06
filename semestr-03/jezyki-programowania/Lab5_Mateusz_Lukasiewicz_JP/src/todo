@@ -1,0 +1,98 @@
+Przed wykoniem zadania przeanalizuj problem i założenia
+Opracowanie programu służącego do kadrowania zdjęć.
+Program nie posiada przycisków
+1. Wybór i wczytanie obrazka do kadrowania
+
+Po odpaleniu programu
+Program uruchamia okno wyboru pliku obrazka (JFileChooser):
+— po przyciśnięciu klawisza W na klawiaturze,
+— po wyborze opcji Wczytaj w menu podręczym (JPopupMenu) pojawiającemu się po naciśnięciu prawego
+przycisku myszy na obszarze panelu do rysowania (JPanel)
+
+2.Panel pozycji i koloru
+getrgb
+Pod panelem do rysowania znajdują się etykiety (JLabel), które wyświetlają aktualną pozycję kursora myszy  oraz kolor punktu wskazanego przez kursor.(Jeśli jest na panelu do rysownaia)
+
+
+3. Menu skroty klawiszowe
+W menu podręczym (JPopupMenu) powinny być dostępne wszystkie funkcjonalności, które są dostępne jako
+skróty klawiaturowe
+Obok panelu w etykiecie powinna być lista skrótów klawiaturowych możliwych do wykorzystania w aplikacji:
+— W – wczytaj plik z obrazkiem,
+
+— Q – wyjście z programu
+
+4.kadrowanie zdjęcia za pomocą czworobok
+klikamy myszką a panel rysowania i jak klikniemy drugi raz to zaznacza się wybrany obszar,jeśli po 2 kliknięciach  nastąpi 3 to obszar zaczynamy zaznaczać na nowo a jeśli po 2 kliknięciach zostanie zaznaczony obaszar i użytkownik go zapisze to zapisujemy obraz
+Jeśli w programie było wprowadzone zaznaczenie i przyciśniemy Q, program powinien spytać, czy zapisać
+zaznaczenie.
+Zaznaczenie powinno być obiektem klasy Zaznaczenie, który przechowuje:
+— X – współrzędna x lewego górnego wierzchołka zaznaczenia,
+— Y – współrzędna y lewego górnego wierzchołka zaznaczenia,
+— W – szerokość zaznaczenia,
+— H – wysokość zaznaczenia.
+
+dodaj skrót
+— K – kadrowanie za pomocą kwadratu,
+— Z – zapisz zaznaczony fragment obrazka,
+— C – powrót do obrazka bez zaznaczenia.
+
+
+Niech będzie komunikat że nie można kadrować obszaru poza zdjęciem i niech to nie będzie możliwe tak samo przy zapisie neich sprawdza czy się mieści
+
+Dopiero po kliknięciu k zaczynaj kadrować dodaj to do menu
+niech c kasuje wybraną forme kadrowania czyli dopiero po ponownym nacisnięciu k zacznie kadrować
+
+
+
+
+Dopiero po kliknięciu k zaczynaj kadrować(jeśli jest juiż załadowany obraz) dodaj to do menu,
+niech c kasuje wybraną forme kadrowania czyli dopiero po ponownym nacisnięciu k zacznie kadrować jeśli jest tryb kadrowania niech będzie na górze komunnikat że jest to tryb kadrowania ale dopiero jeśli jest obraz komunikat o tym że zaznaczenie poza obszarem wyświetla się jesli nawet nei mamy zdjęcia i trybu kadrowania zmien to żeby tylko podczas trybu kadrowania  był on
+
+
+5. Kadrowanie liniami
+
+drugi sposób polega na pojawieniu się czterech linii – dwie poziome i dwie pionowe, które po przesunięciu ich
+myszą wskazują zaznaczony obszar. Linie tej samej osi niemogą na siebie najść i przekroczyć. ustaw blokadę
+
+— L – kadrowanie za pomocą czterech linii,
+
+linie neich będą resetowane równeiż po kliknięciu c
+
+
+
+
+
+nie zmieniając wyglądu aplikacji zastanó się przeanalizuj moje wytyczne a dopiero potem napisz kod dodaj funkcjonalność Kadrowanie liniami
+mają być 2 dryby kadrowania jeden już isteniejący po klikaniu 2 punktów a 2 to linie
+drugi sposób polega na pojawieniu się czterech linii – dwie poziome i dwie pionowe, które po przesunięciu ich
+myszą wskazują zaznaczony obszar. Linie tej samej osi niemogą na siebie najść i przekroczyć. ustaw blokadę
+Niech te linie będą na tyle duże żeby można je było łatwo przesuwać myszką
+Po kliknięciu L wybieramy tryb kadrowanie liniami
+— L – kadrowanie za pomocą czterech linii, to ma być osobne kadrowanie
+
+
+nie zmieniając wyglądu aplikacji zastanó się przeanalizuj moje wytyczne a dopiero potem napisz kod dodaj funkcjonalność
+Skalowanie zdjęć zrób tak aby zdjęcia się skalowały obszar na którym wywietla się zdjęcie jest również skalowalny w zależności czy użyamy pełnego ekranu czy nie ma być przerwa między obrazem a wszystkimio brzegami
+
+zmiana na polski
+osobne klasy
+zapis gdzie się chce z nazwą
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+Pytania czy jeśli jedno klikniecie będzie poza obszarem to kadrowanie ma się dopasowywać do końca obrazu czy komunikat że nie można
+Gdzie zapisywać obcięty obraz
+Czy obcięty obraz ma się zamieniać z tym co jest obcinany?

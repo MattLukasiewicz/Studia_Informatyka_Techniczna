@@ -1,0 +1,123 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="AutoImportSettings">
+    <option name="autoReloadType" value="SELECTIVE" />
+  </component>
+  <component name="ChangeListManager">
+    <list default="true" id="891f6b74-2bba-401c-b934-5f2237436163" name="Changes" comment="Trzeci commit: Poparawione po uwagach na konsulatacjach nie działa wyjątek" />
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="FileTemplateManagerImpl">
+    <option name="RECENT_TEMPLATES">
+      <list>
+        <option value="Class" />
+      </list>
+    </option>
+  </component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
+  </component>
+  <component name="ProjectColorInfo">{
+  &quot;associatedIndex&quot;: 2
+}</component>
+  <component name="ProjectId" id="2oJ2gCmLeIR3t6msziqehoKciqj" />
+  <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
+  <component name="ProjectViewState">
+    <option name="hideEmptyMiddlePackages" value="true" />
+    <option name="showLibraryContents" value="true" />
+  </component>
+  <component name="PropertiesComponent"><![CDATA[{
+  "keyToString": {
+    "Application.Main.executor": "Run",
+    "Application.Samochod.executor": "Run",
+    "Application.zadanie_1.executor": "Run",
+    "RunOnceActivity.OpenProjectViewOnStart": "true",
+    "RunOnceActivity.ShowReadmeOnStart": "true",
+    "git-widget-placeholder": "master",
+    "kotlin-language-version-configured": "true",
+    "last_opened_file_path": "C:/Semestr_3/lab2",
+    "node.js.detected.package.eslint": "true",
+    "node.js.detected.package.tslint": "true",
+    "node.js.selected.package.eslint": "(autodetect)",
+    "node.js.selected.package.tslint": "(autodetect)",
+    "nodejs_package_manager_path": "npm",
+    "settings.editor.selected.configurable": "preferences.toDoOptions",
+    "vue.rearranger.settings.migration": "true"
+  }
+}]]></component>
+  <component name="RunManager">
+    <configuration name="zadanie_1" type="Application" factoryName="Application" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="zadanie_1" />
+      <module name="Lab2_MateuszLukasiewicz_JP_gr13Git" />
+      <option name="PROGRAM_PARAMETERS" value="5 Zwyczajnie nie młodszy " />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+  </component>
+  <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
+  <component name="TaskManager">
+    <task active="true" id="Default" summary="Default task">
+      <changelist id="891f6b74-2bba-401c-b934-5f2237436163" name="Changes" comment="" />
+      <created>1730573469240</created>
+      <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
+      <updated>1730573469240</updated>
+      <workItem from="1730573470438" duration="1753000" />
+      <workItem from="1730659840452" duration="3724000" />
+      <workItem from="1730748061527" duration="9732000" />
+      <workItem from="1730801217711" duration="882000" />
+      <workItem from="1730818863370" duration="6577000" />
+      <workItem from="1730912270727" duration="725000" />
+      <workItem from="1731877143792" duration="16000" />
+      <workItem from="1732123938968" duration="69000" />
+      <workItem from="1737462065047" duration="32000" />
+    </task>
+    <task id="LOCAL-00001" summary="Pierwszy commit: Stworzona klasa Samochod w której tworzony jest pojedynczy samochod z losowo wybieraną marką z enum Marka oraz losowe ceny i rocznik.">
+      <option name="closed" value="true" />
+      <created>1730662894887</created>
+      <option name="number" value="00001" />
+      <option name="presentableId" value="LOCAL-00001" />
+      <option name="project" value="LOCAL" />
+      <updated>1730662894887</updated>
+    </task>
+    <task id="LOCAL-00002" summary="Drugi commit: Stworzone kryteria i wywołania dla nich.Jeśli argument jest= &quot;-h&quot; wyswietlana jest pomoc i objasnienie Program dziala prawidłowo">
+      <option name="closed" value="true" />
+      <created>1730760349361</created>
+      <option name="number" value="00002" />
+      <option name="presentableId" value="LOCAL-00002" />
+      <option name="project" value="LOCAL" />
+      <updated>1730760349362</updated>
+    </task>
+    <task id="LOCAL-00003" summary="Trzeci commit: Poparawione po uwagach na konsulatacjach nie działa wyjątek">
+      <option name="closed" value="true" />
+      <created>1730821887464</created>
+      <option name="number" value="00003" />
+      <option name="presentableId" value="LOCAL-00003" />
+      <option name="project" value="LOCAL" />
+      <updated>1730821887464</updated>
+    </task>
+    <task id="LOCAL-00004" summary="Trzeci commit: Poparawione po uwagach na konsulatacjach nie działa wyjątek">
+      <option name="closed" value="true" />
+      <created>1730833193196</created>
+      <option name="number" value="00004" />
+      <option name="presentableId" value="LOCAL-00004" />
+      <option name="project" value="LOCAL" />
+      <updated>1730833193196</updated>
+    </task>
+    <option name="localTasksCounter" value="5" />
+    <servers />
+  </component>
+  <component name="TypeScriptGeneratedFilesManager">
+    <option name="version" value="3" />
+  </component>
+  <component name="VcsManagerConfiguration">
+    <MESSAGE value="Pierwszy commit: Stworzona klasa Samochod w której tworzony jest pojedynczy samochod z losowo wybieraną marką z enum Marka oraz losowe ceny i rocznik." />
+    <MESSAGE value="Drugi commit: Stworzone kryteria i wywołania dla nich.Jeśli argument jest= &quot;-h&quot; wyswietlana jest pomoc i objasnienie Program dziala prawidłowo" />
+    <MESSAGE value="Trzeci commit: Poparawione po uwagach na konsulatacjach nie działa wyjątek" />
+    <option name="LAST_COMMIT_MESSAGE" value="Trzeci commit: Poparawione po uwagach na konsulatacjach nie działa wyjątek" />
+  </component>
+</project>

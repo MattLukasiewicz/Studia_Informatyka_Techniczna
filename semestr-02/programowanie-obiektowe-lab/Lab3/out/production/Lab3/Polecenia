@@ -1,0 +1,36 @@
+Zadanie 3.1 (5.0 pkt.)
+W publicznej klasie Circle:
+• Zdefiniuj publiczną, statyczną metodę, która narysuje na ekranie koło.
+1 public static void printCircle(int n);
+2
+• Koło powinno zostać wpisane w pustą tablicę dwuwymiarową.
+• Koło ma mieć promień n, a tablica je przechowująca być nie większa niż to konieczne
+Pomijamy wszelkie tricki na przechowywanie tylko części koła
+i wykorzystywanie symetrii figury. Całe koło ma znaleźć się w tablicy.
+• Podejmujemy próbę rysowania tylko jeśli n jest ­ 2
+• Odległość między dowolnym punktem (x, y) a środkiem koła (xS, yS) obliczamy według wzoru:
+q
+(xS − x)
+2 + (yS − y)
+2
+• Puste miejsca należy uzupełnić innymi symbolami, bądź po prostu spacjami.
+1
+• Koło powinno zostać wyświetlone, wyświetlając zawartość tablicy.
+• Zdefiniuj metodę main, w której wywołasz zdefiniowaną wcześniej metodę printCircle.
+Ciekawe symbole do rysowania w konsoli https: // theasciicode. com. ar
+Zadanie 3.2 (5.0 pkt.)
+W klasie Studies prowadzisz kartotekę studentów i kierunków, na których studiują. Pojedynczy
+wpis do kartoteki składa się z trzech elementów: 1) imię i nazwisko studenta, 2) kierunek studiów,
+3) czy student jest starostą swojego kierunku.
+Na przykład:
+Jan Kowalski - Informatyka Techniczna - TAK
+Anna Nowak - Automatyka i Robotyka - NIE
+Kwestię tak/nie możecie zaimplementować dowolnie:
+jako string, jako boolean, bądź jako liczbę - tak długo jak
+będzie to spójnę i będzie miało sens w Waszym systemie.
+Należy wprowadzić dane do odpowiednich kolekcji, aby zautomatyzować pracę nad następującymi problemami:
+(a) Kierunki studiów - bez powtórzeń
+(b) Lista studentów - bez powtórzeń
+(c) Kierunki studiów wraz ze swoimi starostami - bez powtórzeń
+Należy użyć kolekcji odpowiedniej do problemu z podpunktu.
+Wyświetl rozwiązania problemów a-c.

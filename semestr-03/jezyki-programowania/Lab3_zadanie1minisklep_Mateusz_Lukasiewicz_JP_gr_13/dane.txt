@@ -1,0 +1,11 @@
+kod;nazwa;ilosc;cena
+1001;Wedka;10;149.99
+1002;Kolowrotek;15;79.9
+1003;Haczyki;50;12.49
+1004;Zestaw przynet;20;29.99
+1005;Splawik;30;9.99
+1006;Zylka;25;45.5
+1007;Torba wedkarska;8;199.0
+1008;Podbierak;12;89.99
+1009;Echosonda;5;499.0
+1010;Skladane krzeselko wedkarskie;7;129.99
